@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <form>
+        <div id="user-data">
+          <div class="form-group">
+            <label for="name">Book Name</label>
+            <input type="text" id="name" name="name" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="id">Id</label>
+            <input type="id" id="id" name="id" class="form-control">
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Add</button>
+      </form>
+    </div>
+  </div>
+
+</div>
+
+<!--
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <form (ngSubmit)="onSubmit()" #f="ngForm">
+        <div id="user-data">
+          <div class="form-group">
+            <label for="name">Book Name</label>
+            <input type="text" id="name" name="name" class="form-control" ngModel required>
+          </div>
+          <div class="form-group">
+            <label for="id">Id</label>
+            <input type="id" id="id" name="id" class="form-control" ngModel required>
+          </div>
+        </div>
+        <button [disabled]="f.invalid" class="btn btn-primary" type="submit">Add</button>
+      </form>
+    </div>
+  </div>
+
+  <div *ngIf="formSubmitted">
+    <app-book [book]="book"></app-book>
+  </div>
+</div>
+ -->

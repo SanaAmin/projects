@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-4">
+    <div class="list-group">
+      <a
+        routerLink="{{book.id}}/{{book.name}}"
+        href="#"
+        class="list-group-item"
+        *ngFor="let book of books">
+        {{ book.name }}
+      </a>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-4">
+    <router-outlet></router-outlet>
+  </div>
+  <!--<div class="col-xs-12 col-sm-4">-->
+    <!--<app-book-add (bookAdded)="onBookAdded($event)"></app-book-add>-->
+  <!--</div>-->
+</div>
+
+
